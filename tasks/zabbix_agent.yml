@@ -32,8 +32,7 @@
 
 - name: zabbix_agent | Install Zabbix agent
   apt: 
-     pkg="zabbix-agent={{zabbix_agent}}"
-     state=present
+     pkg="zabbix-agent"
   tags: zabbix_agent
 
 - name: zabbix_agent | Deploy zabbix_agentd.conf file
