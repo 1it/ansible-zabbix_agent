@@ -32,7 +32,7 @@
 
 - name: zabbix_agent | Install Zabbix agent
   apt: 
-     pkg="zabbix-agent={{zabbix_agent_ubuntu}}"
+     pkg="zabbix-agent={{zabbix_agent}}"
      state=present
   tags: zabbix_agent
 
