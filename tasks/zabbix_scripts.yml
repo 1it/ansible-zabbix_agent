@@ -1,9 +1,9 @@
 ---
 
-- name: zabbix_agent | Deploy Zabbix sudeors file
+- name: zabbix_agent | Deploy Zabbix sudoers file
   template: 
-     src=conf/zabbix-sudeors.j2 
-     dest=/etc/sudoers.d/zabbix-sudeors
+     src=conf/zabbix-sudoers.j2 
+     dest=/etc/sudoers.d/zabbix-sudoers
      owner=root
      group=root
      mode=0640
