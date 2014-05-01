@@ -13,8 +13,8 @@ zabbix_agent_PidFile              : "/var/run/zabbix/zabbix_agentd.pid"
 zabbix_agent_ListenIP             : "0.0.0.0"
 zabbix_agent_ListenPort           : 10050
 zabbix_agent_StartAgents          : 3
-zabbix_agent_EnableRemoteCommands : 0 ## 0 or 1
-zabbix_agent_LogRemoteCommands    : 0 ## 0 or 1
+zabbix_agent_EnableRemoteCommands : 1 ## 0 or 1
+zabbix_agent_LogRemoteCommands    : 1 ## 0 or 1
 zabbix_agent_RefreshActiveChecks  : 120 ## checks is refreshed, in sec 60-3600
 #zbx_agent_source_ip               : 192.168.56.150 ## if you want Source IP address for outgoing connections
 
@@ -87,3 +87,4 @@ zabbix_agent_tunnel_pub_key     : ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCootXD63
 ## Compilation of variables (No need to change them unless you have issues)
 zabbix_agent_version            : "{{zabbix_agent_major}}.{{zabbix_agent_minor}}.{{zabbix_agent_revision}}"
 zabbix_agent_ubuntu             : "1:{{zabbix_agent_version}}-1+precise"
+zabbix_agent_debian             : "1:{{zabbix_agent_version}}-1+wheezy"
